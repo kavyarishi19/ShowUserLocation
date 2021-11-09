@@ -103,7 +103,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     if (listAddress.get(0).getPostalCode() != null){
                         address += listAddress.get(0).getPostalCode() ;           // Postal Code
                     }
-                    Toast.makeText(MapsActivity,this, address, Toast.LENGTH_SHORT).show();
+                Toast.makeText(MapsActivity.this,address,Toast.LENGTH_SHORT).show();
                 }
             } catch (Exception e){
                 e.printStackTrace();
